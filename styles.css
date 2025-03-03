@@ -217,11 +217,11 @@ img
 
 
 /* ==============================NAVIGATION FOR MOBILE DRVICES======================================= */
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1150px) {
     .nav__menu
     {
         position:fixed;
-        top:0;
+        top:-120%;
         left:0;
         background-color: var(--body-color);
         width: 100%;
@@ -244,10 +244,11 @@ img
     {
         position: relative;
         color:var(--title-color);
-        font-size: var(--second-font);
+        font-family: var(--second-font);
+        display: inline-block;
     }
 
-.nav__link ::after
+.nav__link::after
     {
         content: '';
         width: 0;
@@ -262,7 +263,7 @@ img
 
 .nav__link:hover::after 
     {
-        width: 60%;
+        width: 100%;
     }
 
 
