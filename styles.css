@@ -14,8 +14,8 @@
         --title-color:hsl(353,48%,12%);
         --text-color:hsl(353,16%,32%);
         --text-color-light:hsl(353,16%,48%);
-        --white-color:hus(24,86%,90%);
-        --body-color:hsl(24,86%,90%);
+        --white-color:hsl(24,86%,90%);
+        --body-color:hsl(24,86%,88%);
         --container-color:hsl(24,86%,92%);
 
         /* drop-shadow(offset-x, offset-y, blur-radius, color) 
@@ -29,7 +29,7 @@
         /* ===========================FONT AND TYPOGRAPHY========================= */
         --body-font:"Montserrat",sans-serif;
         --second-font:"Cater One",system-ui;
-        --biggest-font-size:2.5rem;
+        --biggest-font-size:4.5rem;
         --bigger-font-size:1.5rem;
         --h1-font-size:1.5rem;
         --h2-font-size:1.25rem;
@@ -216,7 +216,7 @@ img
 
 
 
-/* ==============================NAVIGATION FOR MOBILE DRVICES======================================= */
+/* ==============================NAVIGATION FOR MOBILE DEVICES======================================= */
 @media screen and (max-width:1150px) {
     .nav__menu
     {
@@ -282,19 +282,119 @@ img
     }
 
 
+/* =======================HOME====================== */
+.home__container{
+    padding-block: 2rem 3rem;
+    row-gap: 7rem;
+}
+
+.home__data{
+    position: relative;
+    text-align: center;
+}
+
+.home__title{
+    font-size: var(--biggest-font-size);
+}
 
 
+.home__description{
+    margin-block: 1rem 2rem;
+}
+
+ 
+
+.home__sticker-1,
+.home__sticker-2{
+    width: 40px;
+    position: absolute;
+    opacity: .7;
+}
+
+.home__sticker-1{
+    right:.75rem;
+    bottom:2rem;
+    rotate:30deg;
+}
 
 
+.home__sticker-2{
+    left:2.5rem;
+    bottom: -4.5rem;
+}
+
+.home__images{
+    position: relative;
+    display: grid;
+    justify-items: center;
+    justify-self: center;
+}
+
+.home__ingredient{
+    width:60px;
+    filter: var(--shadow-small-img);
+    position: absolute;
+    z-index: 2;
+}
+
+.home__board,
+.home__pizza{
+    filter: var(--shadow-big-img);
+}
+
+.home__pizza{
+    width: 300px;
+    z-index: 2;
+}
+.home__board{
+    width: 300px;
+    position: absolute;
+    bottom: -0.5rem;
+    left: -0.15rem;
+}
+
+.home__leaf-1{
+    top: -1rem;
+}
+
+.home__pepperoni{
+    right: -.5rem;
+    top: 2rem;
+}
+.home__mushroom{
+    right: -.5rem;
+    bottom: 2rem;
+}
+
+.home__olive{
+    bottom: -1rem;
+}
+
+.home__leaf-2{
+    left: -.5rem;
+    bottom: 2rem
+}
+
+.home__tomato{
+    left: -.5rem;
+    top: 2rem;
+}
+.button{
+    display: inline-flex;
+    justify-content: center;
+    background-color: var(--first-color);
+    color: var(--white-color);
+    padding: 1rem 1.5rem;
+    font-weight: var(--font-semi-bold);
+    border-radius: 4rem;
+    box-shadow: 0 8px 24px hsla(353,100%,40%,.4);
+    transition: background-color .4s;
+}
 
 
-
-
-
-
-
-
-
+.button:hover{
+    background-color: var(--first-color-alt);
+}
 
 
 
