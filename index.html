@@ -9,7 +9,7 @@
     <!-- ===============REMIX_ICON=========================== -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
     <!-- ================SWIPER_CSS=============================== -->
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="js/swiper-bundle.min.css">
     <!-- ==================CSS============================== -->
      <link rel="stylesheet" href="./styles.css">
 
@@ -57,7 +57,7 @@
      <!-- ============================================== MAIN ==================================== -->
       <main class="main">
         <!-- =================HOME============== -->
-         <section class="home section" id="home">
+        <section class="home section" id="home">
             <div class="home__container container grid">
                 <div class="home__data"> 
                     <h1 class="home__title">Crispy And <br>Delicious Pizzas</h1>
@@ -83,10 +83,10 @@
                     <img src="img/home-tomato.png" alt="image" class="home__ingredient home__tomato">
                 </div>
             </div>
-         </section>
+        </section>
 
-         <!-- ==============ABOUT================== -->
-          <section class="about section" id="about">
+        <!-- ==============ABOUT================== -->
+        <section class="about section" id="about">
             <div class="about__container container grid">
                 <div class="about__data">
                     <h2 class="section__title">Learn More About<br>Our History</h2>
@@ -102,9 +102,46 @@
                 </div>
                 <img src="img/about-img.png" alt="image" class="about__img">
             </div>
+        </section>
+        
+        <!-- ==========================POPULAR===================== -->
+        <section class="popular section" id="popular">
+            <div class="popular__container container grid">
+                <div class="popular__data">
+                    <h2 class="section__title">Discover <br> Popular Orders</h2>
 
-          </section>
+                    <p class="popular__description">
+                        Select the best prepared and delicious flavors.
+                        We have collected some popular recipes from around 
+                        the world for you to choose your favorite.
+                    </p>
+                </div>
+                <div class="popular__swiper"> 
+                    <img src="img/popular-dish.png" alt="image" class="popular__dish">
+                    <div>
+                        <article class="popular__card">
+                            <img src="img/popular-1.png" alt="image" class="popular__img">
+                            <h3 class="popular__title">Margherita Pizza</h3>
+                        </article>
+
+                        <article class="popular__card">
+                            <img src="img/popular-2.png" alt="image" class="popular__img">
+                            <h3 class="popular__title">Mushroom Pizza</h3>
+                        </article>
+
+                        <article class="popular__card">
+                            <img src="img/product-2.png" alt="image" class="popular__img">
+                            <h3 class="popular__title">Pepperoni Pizza</h3>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+        </section>
         </main>
-    <script src="./main.js"></script>
+    <!-- SWIPER JS -->
+    <script src="js/swiper-bundle.min.css"></script>
+    <!-- main js -->
+    <script src="js/main.js"></script>
 </body>
 </html> 
