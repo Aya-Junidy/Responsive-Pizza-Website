@@ -9,9 +9,9 @@
     <!-- ===============REMIX_ICON=========================== -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
     <!-- ================SWIPER_CSS=============================== -->
-    <link rel="stylesheet" href="js/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <!-- ==================CSS============================== -->
-     <link rel="stylesheet" href="./styles.css">
+     <link rel="stylesheet" href="css/styles.css">
 
     <title>Responsive pizza website</title>
 </head>
@@ -109,27 +109,27 @@
             <div class="popular__container container grid">
                 <div class="popular__data">
                     <h2 class="section__title">Discover <br> Popular Orders</h2>
-
                     <p class="popular__description">
                         Select the best prepared and delicious flavors.
                         We have collected some popular recipes from around 
                         the world for you to choose your favorite.
                     </p>
                 </div>
-                <div class="popular__swiper"> 
+                <div class="popular__swiper swiper"> 
                     <img src="img/popular-dish.png" alt="image" class="popular__dish">
-                    <div>
-                        <article class="popular__card">
+                    
+                    <div class="swiper-wrapper">
+                        <article class="popular__card swiper-slide">
                             <img src="img/popular-1.png" alt="image" class="popular__img">
                             <h3 class="popular__title">Margherita Pizza</h3>
                         </article>
 
-                        <article class="popular__card">
+                        <article class="popular__card swiper-slide">
                             <img src="img/popular-2.png" alt="image" class="popular__img">
                             <h3 class="popular__title">Mushroom Pizza</h3>
                         </article>
 
-                        <article class="popular__card">
+                        <article class="popular__card swiper-slide">
                             <img src="img/product-2.png" alt="image" class="popular__img">
                             <h3 class="popular__title">Pepperoni Pizza</h3>
                         </article>
@@ -140,7 +140,7 @@
         </section>
         </main>
     <!-- SWIPER JS -->
-    <script src="js/swiper-bundle.min.css"></script>
+    <script src="js/swiper-bundle.min.js"></script>
     <!-- main js -->
     <script src="js/main.js"></script>
 </body>

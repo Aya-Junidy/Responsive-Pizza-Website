@@ -21,28 +21,28 @@
         applies a shadow effect similar to box-shadow, but it 
         respects the shape of an element (like transparent parts of an image)
         */
-        --shadow-small-img:drop-shadow(0 4px 16px hsla(353,100%,8%,.2));
-        --shadow-big-img:drop-shaddow(0 8px 24px hsla(353,100%,8%,.2));
+        --shadow-small-img: drop-shaddow(0 4px 16px hsla(353,100%,8%,.2));
+        --shadow-big-img: drop-shaddow(0 8px 24px hsla(353,100%,8%,.2));
 
 
         /* ===========================FONT AND TYPOGRAPHY========================= */
-        --body-font:"Montserrat",sans-serif;
-        --second-font:"Cater One",system-ui;
-        --biggest-font-size:4.5rem;
-        --bigger-font-size:1.5rem;
-        --h1-font-size:1.5rem;
-        --h2-font-size:1.25rem;
-        --h3-font-size:1rem;
+        --body-font: "Montserrat",sans-serif;
+        --second-font: "Cater One",system-ui;
+        --biggest-font-size: 4.5rem;
+        --bigger-font-size: 1.5rem;
+        --h1-font-size: 1.5rem;
+        --h2-font-size: 1.25rem;
+        --h3-font-size: 1rem;
 
-        --normal-font-size:.938rem;
-        --small-font-size:.813rem;
-        --smaller-fobt-size:.75rem;
+        --normal-font-size: .938rem;
+        --small-font-size: .813rem;
+        --smaller-fobt-size: .75rem;
 
 
         /* =====================FONT WEIGHT====================== */
-        --font-regular:400;
-        --font-medium:500;
-        --font-semi-bold:600;
+        --font-regular: 400;
+        --font-medium: 500;
+        --font-semi-bold: 600;
 
 
 
@@ -456,19 +456,32 @@ applies styles to .section__title
     width: 200px;
 }
 
+.popular__img{
+    transform: scale(.8) rotate(-90deg);
+    transition: transform .4s;
+}
 .popular__title{
     font-size: var(--h3-font-size);
     color: var(--first-color);
     margin-top: 2rem;
     text-align: center;
+    opacity: 0;
+    transition: opacity .4s;
 }
 
+/* swiper class */
+.swiper{
+    margin-inline: initial;
+    overflow: visible;
+}
 
+:is(.swiper-slide-active, .swiper-slide-duplicate-active) .popular__img{
+    transform: scale(1) rotate(0);
+}
 
-
-
-
-
+:is(.swiper-slide-active, .swiper-slide-duplicate-active) .popular__title{
+    opacity: 1;
+}
 
 
 
