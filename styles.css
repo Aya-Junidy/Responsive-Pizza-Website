@@ -258,7 +258,10 @@ img{
         top: 0;
     }
 
-
+/* Add shadow header */
+.shadow-header{
+    box-shadow: 0 4px 16px hsl(7, 100%, 50%);
+}
 
 
 /* =======================HOME====================== */
